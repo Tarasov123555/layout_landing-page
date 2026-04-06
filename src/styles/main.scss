@@ -91,11 +91,20 @@ textarea {
   justify-content: center;
   width: 24px;
   height: 24px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .header__phone-icon {
   width: 24px;
   height: 24px;
+}
+
+.header__phone:hover,
+.header__phone:focus-visible {
+  transform: scale(1.06);
+  opacity: 0.85;
 }
 
 .header__phone-number {
@@ -123,11 +132,21 @@ textarea {
   justify-content: center;
   width: 24px;
   height: 24px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .header__menu-icon {
-  width: 18px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header__menu:hover,
+.header__menu:focus-visible {
+  transform: scale(1.06);
+  opacity: 0.85;
 }
 
 .hero {
@@ -151,14 +170,25 @@ textarea {
   position: fixed;
   inset: 0;
   z-index: 10;
-  display: none;
+  display: block;
   overflow: auto;
   background-color: #c2c2c2;
   color: #1d1d1d;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .menu:target {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 .menu__container {
@@ -216,12 +246,35 @@ textarea {
 }
 
 .menu__link {
+  position: relative;
   width: fit-content;
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: currentcolor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu__link:hover::after {
+  transform: scaleX(1);
+}
+
+.menu__link:hover {
+  color: rgba(29, 29, 29, 0.7);
 }
 
 .menu__bottom {
@@ -420,7 +473,9 @@ textarea {
 
 .details__button {
   width: min(100%, 324px);
+  display: flex;
   margin: 48px auto 0;
+  justify-content: center;
 }
 
 .contact-us {
@@ -636,14 +691,21 @@ textarea {
     display: none;
   }
 
+  .top-block {
+    background-position: 72% center;
+  }
+
   .hero {
     min-height: calc(100vh - 104px);
   }
 
   .hero__title {
-    max-width: 320px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
     font-size: 46px;
     letter-spacing: -1px;
+    text-align: center;
   }
 
   .menu__container {
