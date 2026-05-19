@@ -13,3 +13,21 @@ backstop_data
 dist
 .cache
 .parcel-cache
+vite-server*.log
+
+# Local handoff copies
+Best-Mobile-Detailing-clean/
+order-icons-ready/
+order-icons-from-image-ready/
+order-logo-final-ready/
+order-logo-pictures-ready/
+
+# Large generated source variants not used by the site
+src/assets/hero-detailing.png
+src/assets/interior-detailing.png
+src/assets/paint-correction.png
+src/assets/ceramic-coating.png
+src/assets/results/*.png
+src/assets/order-icons/
+src/assets/order-logo-final/
+src/assets/order-logo-pictures/

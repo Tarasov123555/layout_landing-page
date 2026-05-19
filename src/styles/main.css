@@ -246,7 +246,7 @@ a {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(5, 8, 7, 0.88), rgba(5, 8, 7, 0.36)),
-    url('../assets/hero-detailing.jpg') center / cover;
+    url('../assets/hero-detailing.jpg') center/cover;
 }
 
 .hero__content {
@@ -712,7 +712,7 @@ h3 {
 }
 
 .gallery__image {
-  aspect-ratio: 1 / 0.82;
+  aspect-ratio: 1/0.82;
   border-radius: 8px;
 }
 
@@ -724,7 +724,7 @@ h3 {
   color: #fff;
   background:
     linear-gradient(rgba(14, 17, 16, 0.88), rgba(14, 17, 16, 0.94)),
-    url('../assets/paint-correction.jpg') center / cover;
+    url('../assets/paint-correction.jpg') center/cover;
 }
 
 .quote__content {
@@ -901,15 +901,12 @@ h3 {
   .featured-service:nth-child(even) {
     grid-template-columns: 1fr;
   }
-
   .featured-service:nth-child(even) img {
     order: 0;
   }
-
   .hero {
     align-items: end;
   }
-
   .steps,
   .faq__grid,
   .package-grid,
@@ -927,15 +924,12 @@ h3 {
     gap: 12px;
     padding: 16px;
   }
-
   .nav {
     gap: 12px;
   }
-
   .nav__item {
     width: 100%;
   }
-
   .nav__dropdown {
     position: static;
     min-width: 0;
@@ -945,21 +939,17 @@ h3 {
     pointer-events: auto;
     transform: none;
   }
-
   .rating-strip {
     flex-direction: column;
   }
-
   .hero {
     min-height: auto;
     padding-top: 172px;
   }
-
   .hero__actions,
   .button {
     width: 100%;
   }
-
   .trust-bar,
   .services,
   .steps,
@@ -970,20 +960,16 @@ h3 {
   .gallery__grid {
     grid-template-columns: 1fr;
   }
-
   .service {
     grid-template-columns: 52px 1fr;
     align-items: start;
   }
-
   .service__text {
     grid-column: 2;
   }
-
   .quote-frame {
     min-height: 1300px;
   }
-
   .footer {
     grid-template-columns: 1fr;
   }
