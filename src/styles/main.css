@@ -918,33 +918,75 @@ h3 {
 
 @media (max-width: 640px) {
   .site-header {
-    position: absolute;
-    align-items: flex-start;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    align-items: stretch;
     flex-direction: column;
-    gap: 12px;
-    padding: 16px;
+    gap: 10px;
+    margin: 0;
+    padding: 10px 12px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .logo__mark {
+    width: 34px;
+    height: 34px;
   }
   .nav {
-    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    font-size: 13px;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav__standard-link,
+  .nav__link,
+  .nav__button {
+    min-height: 38px;
+    padding: 9px 10px;
+    white-space: nowrap;
   }
   .nav__item {
-    width: 100%;
+    flex: 0 0 auto;
+    width: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .nav__dropdown {
-    position: static;
-    min-width: 0;
-    margin-top: 6px;
-    box-shadow: none;
-    opacity: 1;
-    pointer-events: auto;
-    transform: none;
+    display: none !important;
+  }
+  .nav__chevron {
+    display: none !important;
+  }
+  .theme-toggle {
+    width: 38px;
+    min-height: 38px;
+    flex: 0 0 auto;
+  }
+  .language-toggle {
+    flex: 0 0 auto;
+  }
+  .language-toggle__button {
+    min-height: 30px;
+    padding: 0 8px;
   }
   .rating-strip {
     flex-direction: column;
   }
   .hero {
-    min-height: auto;
-    padding-top: 172px;
+    min-height: 650px;
+    padding-top: 48px;
   }
   .hero__actions,
   .button {
