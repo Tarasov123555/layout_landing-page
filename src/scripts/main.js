@@ -46,6 +46,10 @@ const translations = {
       '#services .section__heading .eyebrow': 'Services',
       '#services .section__heading h2':
         'Everything your vehicle needs to look its best.',
+      '#rv-detailing .eyebrow': 'RV and motorhome detailing',
+      '#rv-detailing h3': 'We wash and clean RVs too.',
+      '#rv-detailing .featured-service__text':
+        'We also clean RVs, motorhomes, and large recreational vehicles. Send a request with photos, size, location, and condition so we can build the right quote for the wash or full detail.',
       '.packages .eyebrow': 'Popular packages',
       '.packages h2': 'Choose the level that fits your vehicle.',
       '.process .eyebrow': 'Process',
@@ -54,6 +58,8 @@ const translations = {
       '.gallery h2': 'Clean details. Sharp gloss. Protected surfaces.',
       '#quote .eyebrow': 'Get a quote',
       '#quote h2': 'Request pricing for your vehicle.',
+      '#quote .quote__text':
+        'Use the secure Urable form to send your vehicle or RV details, service needs, photos, location, and contact information.',
     },
     theme: {
       day: 'Day',
@@ -236,6 +242,10 @@ const translations = {
       '#services .section__heading .eyebrow': 'Services',
       '#services .section__heading h2':
         'Tout ce qu’il faut pour que votre véhicule soit à son meilleur.',
+      '#rv-detailing .eyebrow': 'Detailing RV et motorhome',
+      '#rv-detailing h3': 'Nous lavons et nettoyons aussi les RV.',
+      '#rv-detailing .featured-service__text':
+        'Nous nettoyons aussi les RV, motorhomes et grands véhicules récréatifs. Envoyez une demande avec photos, taille, emplacement et condition pour recevoir le bon prix pour le lavage ou le detailing complet.',
       '.packages .eyebrow': 'Forfaits populaires',
       '.packages h2': 'Choisissez le niveau adapté à votre véhicule.',
       '.process .eyebrow': 'Processus',
@@ -244,6 +254,8 @@ const translations = {
       '.gallery h2': 'Détails propres. Brillance nette. Surfaces protégées.',
       '#quote .eyebrow': 'Demander un prix',
       '#quote h2': 'Demandez un prix pour votre véhicule.',
+      '#quote .quote__text':
+        'Utilisez le formulaire sécurisé Urable pour envoyer les détails de votre véhicule ou RV, le service voulu, des photos, votre emplacement et vos coordonnées.',
     },
     theme: {
       day: 'Jour',
